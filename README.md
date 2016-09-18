@@ -81,17 +81,67 @@ it will enhance whichever object you passed.
 
 If the `window` object exists and the enhanced history object is the `window.history`
 instance, `uhistory` will automatically listen for `popstate` events on the
-`window` object and make them emit `popstate` events on the `history` object.
-This way, listening for history events becomes a breeze.
+`window` object and make them emit `popstate` and `change` events on the `history`
+object. This way, listening for history events becomes a breeze.
 
-If you passed a custom backing object, you will need to make sure that the
+> If you passed a custom backing object, you will need to make sure that the
 `popstate` and `change` events on the newly created history object are emitted
 at the appropriate moments yourself.
 
+## Events
 The following events are emitted:
-* `change`: As a result of calling `pushState()` or `replaceState()`, or the `window.popstate` event firing
-* 'popstate': As a result of the `window.popstate` event firing
-* `back`, `forward`, `go`, `pushState`, `replaceState`: As a result of the method with the same name being called
+
+### change (location, state, source)
+The `change` event is emitted a a result of calling `pushState()` or `replaceState()`,
+or the `window.popstate` event firing.
+
+#### location
+The new location showing in the address bar (if any)
+
+#### state
+The state object associated with the current history entry (`history.state`)
+
+#### source
+The source of the event. One of `'pustState'`, `'replaceState'` and `'popstate'`.
+
+### popstate (event)
+As a result of the `window.popstate` event firing
+
+#### event
+The event object that was received from `window.popstate`
+
+### back
+As a result of the `back()` method being called.
+
+### forward
+As a result of the `forward()` method being called.
+
+### go (n)
+As a result of the `go()` method being called.
+
+#### n
+The number of entries to move. Can be negative to move backward.
+This is the number that was passed to the `go()` method
+
+### pushState (state, title, url)
+As a result of the `pushState()` method being called.
+
+#### state
+The state object that was passed to `pushState`, if any
+#### title
+The title string that was passed to `pushState`, if any
+#### url
+The url string that was passed to `pushState`, if any
+
+### replaceState (state, title, url)
+As a result of the `replaceState()` method being called.
+
+#### state
+The state object that was passed to `pushState`, if any
+#### title
+The title string that was passed to `pushState`, if any
+#### url
+The url string that was passed to `pushState`, if any
 
 ## Issues
 
