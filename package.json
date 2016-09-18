@@ -1,0 +1,43 @@
+{
+  "name": "uhistory",
+  "id": "uhistory",
+  "version": "0.1.0",
+  "description": "Microscopically small History API based on uevents.",
+  "keywords": [
+    "universal-components",
+    "History",
+    "4kb"
+  ],
+  "author": "Stijn de Witt",
+  "website": "https://StijnDeWitt.com",
+  "contributors": [
+    {
+      "name": "Irakli Gozalishvili",
+      "e-mail": "rfobic@gmail.com",
+      "website": "http://jeditoolkit.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/download/uhistory.git",
+    "web": "https://github.com/download/uhistorys"
+  },
+  "bugs": {
+    "url": "http://github.com/download/uhistory/issues/"
+  },
+  "main": "./uhistory.js",
+  "engines": {
+    "node": ">=4.x.x"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.4",
+    "picolog": "^1.0.4"
+  },
+  "scripts": {
+    "test": "mocha --ui qunit -- tests/index.js"
+  },
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "uevents": "^0.5.0"
+  }
+}
