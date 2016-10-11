@@ -30,7 +30,7 @@
     "node": ">=4.x.x"
   },
   "devDependencies": {
-    "mocha": "~1.21.4",
+    "mocha": "~3.1.2",
     "picolog": "^1.0.4"
   },
   "scripts": {
