@@ -39,6 +39,6 @@
   },
   "license": "CC-BY-4.0",
   "dependencies": {
-    "uevents": "^0.5.0"
+    "uevents": "^1.0.0"
   }
 }
