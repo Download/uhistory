@@ -3,8 +3,10 @@ var EventEmitter = require('uevents')
 module.exports = function History(h) {
 	h = h || (typeof window == 'object' && window.history)
 	if (! h) {throw new Error('History API is not available')}
-	if (h.emit) {return}
-	var back=h.back.bind(h), forward=h.forward.bind(h), go=h.go.bind(h), pushState=h.pushState.bind(h), replaceState=h.replaceState.bind(h)
+	if (h.emit) {return h}
+
+	var back=h.back.bind(h), forward=h.forward.bind(h), go=h.go.bind(h), 
+		pushState=h.pushState.bind(h), replaceState=h.replaceState.bind(h)
 
 	EventEmitter(h)
 

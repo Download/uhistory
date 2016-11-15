@@ -1,12 +1,13 @@
 {
   "name": "uhistory",
   "id": "uhistory",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Microscopically small History API based on uevents.",
   "keywords": [
     "universal-components",
+    "Microscopically small",
     "History",
-    "4kb"
+    "1kB"
   ],
   "author": "Stijn de Witt",
   "website": "https://StijnDeWitt.com",

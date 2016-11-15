@@ -1,4 +1,4 @@
-# uhistory <sup><sub>0.1.0</sub></sup>
+# uhistory <sup><sub>1.0.0</sub></sup>
 
 ## Microscopically small History API based on uevents
 
@@ -147,7 +147,6 @@ The url string that was passed to `pushState`, if any
 
 Add an issue in this project's [issue tracker](https://github.com/download/uhistory/issues)
 to let me know of any problems you find, or questions you may have.
-
 
 ## Copyright
 
