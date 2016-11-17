@@ -1,4 +1,4 @@
-# uhistory <sup><sub>1.0.0</sub></sup>
+# uhistory
 
 ## Microscopically small History API based on uevents
 
