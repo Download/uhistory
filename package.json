@@ -1,7 +1,7 @@
 {
   "name": "uhistory",
   "id": "uhistory",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Microscopically small History API based on uevents.",
   "keywords": [
     "universal-components",
