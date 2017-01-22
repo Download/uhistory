@@ -1,7 +1,7 @@
 var EventEmitter = require('uevents')
 
 module.exports = function History(h) {
-	h = h || (typeof window == 'object' && window.history)
+	h = h || (typeof history == 'object' && history) || (typeof window == 'object' && window.history)
 	if (! h) {throw new Error('History API is not available')}
 	if (h.emit) {return h}
 
