@@ -1,8 +1,12 @@
 {
   "name": "uhistory",
   "id": "uhistory",
-  "version": "1.0.2",
-  "description": "Microscopically small History API based on uevents.",
+  "version": "2.0.0-rc.1",
+  "description": "Microscopically small History API based on uevents",
+  "main": "src/uhistory.js",
+  "scripts": {
+    "test": "mocha src/*.spec.js"
+  },
   "keywords": [
     "universal-components",
     "Microscopically small",
@@ -10,7 +14,8 @@
     "1kB"
   ],
   "author": "Stijn de Witt",
-  "website": "https://StijnDeWitt.com",
+  "website": "https://stijndewitt.com",
+  "license": "CC-BY-4.0",
   "contributors": [
     {
       "name": "Irakli Gozalishvili",
@@ -21,23 +26,16 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/download/uhistory.git",
-    "web": "https://github.com/download/uhistorys"
+    "web": "https://github.com/download/uhistory"
   },
   "bugs": {
     "url": "http://github.com/download/uhistory/issues/"
   },
-  "main": "./uhistory.js",
-  "engines": {
-    "node": ">=4.x.x"
-  },
   "devDependencies": {
-    "mocha": "~3.2.0",
-    "picolog": "^1.0.4"
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "ulocation": "^0.8.0"
   },
-  "scripts": {
-    "test": "mocha --ui qunit -- tests/index.js"
-  },
-  "license": "CC-BY-4.0",
   "dependencies": {
     "uevents": "^1.0.0"
   }
