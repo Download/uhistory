@@ -1,5 +1,7 @@
 # uhistory
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Download/uhistory.svg)](https://greenkeeper.io/)
+
 ## Microscopically small History API based on uevents
 
 [![npm](https://img.shields.io/npm/v/uhistory.svg)](https://npmjs.com/package/uhistory)
