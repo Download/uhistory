@@ -32,7 +32,7 @@
     "url": "http://github.com/download/uhistory/issues/"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.0.1",
     "mocha": "^3.2.0",
     "ulocation": "^0.8.0"
   },
